@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="TabbedPagePlayground.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:local="clr-namespace:TabbedPagePlayground;assembly=TabbedPagePlayground"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="Blue"
+            android:TabbedPage.BarSelectedItemColor="Red">
+  <NavigationPage Title="Info"
+                  Icon="info.png">
+    <x:Arguments>
+      <local:InfoPage />
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="Settings"
+                  Icon="cog.png">
+    <x:Arguments>
+      <local:SettingsPage />
+    </x:Arguments>
+  </NavigationPage>
+
+  <TabbedPage.Effects>
+    <local:UnselectedTabColorEffect />
+  </TabbedPage.Effects>
+</TabbedPage>
