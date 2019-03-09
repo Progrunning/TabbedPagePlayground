@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace TabbedPagePlayground
+namespace TabbedPagePlayground.UI.Effects
 {
     public class UnselectedTabColorEffect : RoutingEffect
     {

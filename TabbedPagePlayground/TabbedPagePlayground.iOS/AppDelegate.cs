@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using TabbedPagePlayground.UI;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;

@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace TabbedPagePlayground
+namespace TabbedPagePlayground.UI
 {
     public partial class MainPage : TabbedPage
     {

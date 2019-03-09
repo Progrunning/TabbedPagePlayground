@@ -2,9 +2,10 @@
 
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            x:Class="TabbedPagePlayground.MainPage"
+            x:Class="TabbedPagePlayground.UI.MainPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            xmlns:local="clr-namespace:TabbedPagePlayground;assembly=TabbedPagePlayground"
+            xmlns:local="clr-namespace:TabbedPagePlayground.UI;assembly=TabbedPagePlayground.UI"
+            xmlns:effects="clr-namespace:TabbedPagePlayground.UI.Effects;assembly=TabbedPagePlayground.UI"
             android:TabbedPage.ToolbarPlacement="Bottom"
             android:TabbedPage.BarItemColor="Blue"
             android:TabbedPage.BarSelectedItemColor="Red">
@@ -22,6 +23,7 @@
   </NavigationPage>
 
   <TabbedPage.Effects>
-    <local:UnselectedTabColorEffect />
+    <effects:UnselectedTabColorEffect />
+    <effects:HideTabLabelsEffect />
   </TabbedPage.Effects>
 </TabbedPage>

@@ -3,7 +3,7 @@ using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
-namespace TabbedPagePlayground
+namespace TabbedPagePlayground.UI
 {
     public partial class App : Application
     {

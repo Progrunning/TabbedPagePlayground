@@ -152,19 +152,22 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.220655" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\TabbedPagePlayground\TabbedPagePlayground.csproj">
-      <Project>{2549B026-2C17-4737-8204-513C8B73CBE4}</Project>
-      <Name>TabbedPagePlayground</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\info.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Effects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TabbedPagePlayground.UI\TabbedPagePlayground.UI.csproj">
+      <Project>{1ea4e7f9-5618-42a1-b45d-251ca197c0f4}</Project>
+      <Name>TabbedPagePlayground.UI</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
